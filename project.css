@@ -1,0 +1,195 @@
+* { 
+	box-sizing: border-box;
+    	margin: 0;
+}
+
+#header {
+	box-shadow: 1px 1px 1px #050505;
+	background-image: url('images/logo.jpeg');
+	background-color: aquamarine;
+	background-position: left;
+	background-size: 30%;
+	background-repeat: no-repeat;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	font-size: small;
+	text-align: right;
+	position: absolute; 
+	left: 0px;
+	top: 0px;
+	width: 100%; 
+	height: 150px; 
+
+}
+
+#footer {
+	padding: 8px 10px 10px 10px;
+	color: white;
+	background-color: #906546;
+}
+
+#copyright {
+	font-size: x-small;
+}
+
+#footer a {
+	color: white;
+	text-decoration: none;
+	padding-right: 2px;
+	padding-left: 2px;
+}
+
+#footer a:hover {
+	color: #333333;
+	background-color: #CBA374;
+}
+
+body {
+	padding: 5px;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	
+}
+
+#content{
+	background-color: #FFFFFF;
+    color: #000000;
+	padding: 3em; 
+    border: 1px solid black;
+	width:83.5%;
+	text-align: justify;
+	position: absolute;
+	left: 200px;
+	top: 150px; 
+	height: 800px;
+	max-width:100%;
+	margin-right: auto;
+
+}
+
+
+.floatRight {
+	float: right;
+	margin-left: 6px;
+	padding-top: 10px;
+}
+
+a {
+	color: #333333;
+	text-decoration: none;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+#gallery {
+	position: relative; 
+}
+
+#gallery ul {
+	list-style-type: none;
+    width: 900px; 
+}
+
+#gallery li {
+	display: inline; 
+    float: left;
+	padding: 10px; 
+}
+	 
+#gallery img {
+	border-style: none; 
+}
+
+#gallery a {
+ 	text-decoration: none;
+    font-style: italic;  
+    color: #333; 
+}
+
+#gallery span {
+	display: none; 
+}
+
+#gallery a:hover span {
+	display: block;     
+	position: absolute;
+	top: 100px;
+	left: 200px; 
+	text-align: center; 
+} 
+
+h3 {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	font-size: x-large;
+	font-variant: small-caps;
+	text-transform: capitalize;
+	color: #906546;
+}
+
+h5 {
+	font-variant: small-caps;
+	text-transform: capitalize;
+	color: #906546;
+}
+
+
+
+#wrapper{ 
+	width: 80%; 
+    margin: auto;
+    display: grid; 
+	position: relative;
+	grid-template-columns: 150px auto auto;
+	grid-template-rows: auto auto auto ; 
+	background-color: #CBA374;
+	border: 1px solid black;
+}
+
+
+
+#nav{ 
+	
+	padding-left: 2px;
+	position: relative;
+	left: 0px;
+	top: 150px; 
+	height:935px;
+	
+	margin-top: 9%;
+	width: 100%;
+}
+
+
+@media (min-width: 600px) {
+	#wrapper { 
+		 display: grid; 
+		grid-template-columns: 55% auto;
+		grid-template-rows: auto auto auto auto;
+		 }
+	
+	nav ul { 
+		display: flex; 
+		flex-direction: row; 
+		flex-wrap: nowrap; 
+		justify-content: space-around; }
+	nav ul li { 
+		border-bottom: none; } 
+								  }
+
+	@media (min-width: 1024px) {
+	body     { 
+		background-color: #cfcfcf; 
+	}
+	nav ul { 
+		display: flex; 
+		flex-direction: column; 
+		flex-wrap: nowrap; 
+	}
+	#wrapper { 
+		width: 80%; 
+		  margin: auto; 
+		  max-width: 1200px; 
+		  display: grid; 
+		grid-template-columns: 150px auto auto;
+		grid-template-rows: auto auto auto ; 
+	}
+
+	
+						} 
